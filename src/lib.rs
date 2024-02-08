@@ -1,4 +1,4 @@
-// Use solana-program crate and bring our needed items into the local namespace:
+//use solana-program crate and bring our needed items into the local namespace:
 use solana_program::{
     account_info::AccountInfo,
     entrypoint,
@@ -7,8 +7,8 @@ use solana_program::{
     msg,
 };
 
-// Every Solana program must define an entrypoint that tells the Solana runtime where to start executing your on chain code. Your program's entrypoint 
-// should provide a public function named process_instruction:
+//every Solana program must define an entrypoint that tells the Solana runtime where to start executing your on chain code. Your program's entrypoint 
+//should provide a public function named process_instruction:
 
 //declare and export the program's entrypoint
 entrypoint!(process_instruction);
@@ -26,4 +26,4 @@ pub fn process_instruction(
     Ok(())
 }
 
-//Every on chain program should return the Ok result enum with a value of ().
+//every on chain program should return the Ok result enum with a value of ().
